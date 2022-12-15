@@ -4,7 +4,7 @@
  * f_pchar - function that prints the char at the top of the stack,
  * followed by a new line
  * @head: stack head
- * @counter: line count
+ * @counter: line counter
  *
  * Return: nothing
  */
