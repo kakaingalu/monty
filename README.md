@@ -68,20 +68,20 @@ julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/00.m
 1
 julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$
 The pint opcode prints the value at the top of the stack.
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ cat bytecodes/06.m 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ cat bytecodes/06.m
 push 1
 pint
 push 2
 pint
 push 3
 pint
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/06.m 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/06.m
 1
 2
 3
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$
 The pop opcode removes the top element of the stack.
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ cat bytecodes/07.m 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ cat bytecodes/07.m
 push 1
 push 2
 push 3
@@ -92,32 +92,32 @@ pop
 pall
 pop
 pall
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/07.m 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/07.m
 3
 2
 1
 2
 1
 1
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$
 The swap opcode swaps the top two elements of the stack.
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ cat bytecodes/09.m 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ cat bytecodes/09.m
 push 1
 push 2
 push 3
 pall
 swap
 pall
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/09.m 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/09.m
 3
 2
 1
 2
 3
 1
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$
 The add opcode adds the top two elements of the stack.
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ cat bytecodes/12.m 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ cat bytecodes/12.m
 push 1
 push 2
 push 3
@@ -125,7 +125,7 @@ pall
 add
 pall
 
-julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/12.m 
+julien@ubuntu:~/0x18-stacks_queues_lifo_fifo$ ./monty bytecodes/12.m
 3
 2
 1

@@ -14,9 +14,9 @@ void push(stack_t **head, unsigned int num)
 	int counter;
 	int rValue;
 
-	for (counter == 0; token[counter]; counter++)
+	for (counter = 0; token[counter]; counter++)
 	{
-		if (counter == 0 && token[i] == '-')
+		if (counter == 0 && token[counter] == '-')
 		{
 			continue;
 		}
@@ -31,12 +31,12 @@ void push(stack_t **head, unsigned int num)
 	}
 	if (token == NULL || rValue == 1)
 	{
-		fprintf(2, "L%u: usage: push integer\n", num);
+		fprintf(stderr, "L%u: usage: push integer\n", num);
 		exit(EXIT_FAILURE);
 	}
 	if (!newNode)
 	{
-		fprintf(2, "Error: malloc failed\n");
+		fprintf(stderr, "Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
 	newNode->n = atoi(token);
