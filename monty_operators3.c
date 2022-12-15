@@ -3,7 +3,7 @@
 /**
  * f_pop - function that prints the top of the stack
  * @head: double head pointer to the stack
- * @counter: line count
+ * @counter: line counter
  *
  * Return: nothing
  */
