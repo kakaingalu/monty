@@ -41,6 +41,6 @@ int main(int argc, char **argv)
 	}
 	free(buffer);
 	fclose(fp);
-	freestack(stack);
+	_freestack(stack);
 	return (0);
 }

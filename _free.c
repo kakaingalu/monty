@@ -6,7 +6,7 @@
  *
  * Return: void
  */
-void freestack(stack_t *stack)
+void _freestack(stack_t *stack)
 {
 	stack_t *tmp;
 
