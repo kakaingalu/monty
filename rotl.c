@@ -3,7 +3,7 @@
 /**
  * f_rotl- function that rotates the stack to the top
  * @head: head of the stack
- * @counter: line count
+ * @counter: line counter
  *
  * Return: nothing
  */
