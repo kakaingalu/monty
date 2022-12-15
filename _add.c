@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-void add(stack_t **stack, unsigned int num)
+void _add(stack_t **stack, unsigned int num)
 {
 	int value;
 

@@ -13,6 +13,9 @@ void get_n_exe(char *com, stack_t **stack, unsigned int num)
 	unsigned int counter = 0;
 	instruction_t com_s[] = {
 		{"push", _push}, {"pall", _pall},
+		{"pint", _pint}, {"pop", _pop},
+		{"swap", _swap}, {"add", _add},
+		{"nop", _nop}, {"sub", _sub},
 		{NULL, NULL}
 	};
 	while (com_s[counter].opcode != NULL)

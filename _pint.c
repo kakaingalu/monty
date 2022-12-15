@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-void pint(stack_t **stack, unsigned int num)
+void _pint(stack_t **stack, unsigned int num)
 {
 	if (stack == NULL || (*stack) == NULL)
 	{
