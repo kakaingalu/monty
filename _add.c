@@ -2,7 +2,7 @@
 
 /**
  * _add - adds the top two elements of the stack
- * @stack: pointer to stack 
+ * @stack: pointer to stack
  * @num: line number
  *
  * Return: void

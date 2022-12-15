@@ -3,7 +3,7 @@
 /**
  * get_n_exe - checks string and executes the appropriate function
  * @com: commands to execute
- * @head: head pointer to stack
+ * @stack: pointer to stack
  * @num: line number
  *
  * Return: void
