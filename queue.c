@@ -18,7 +18,6 @@ void f_queue(stack_t **head, unsigned int counter)
 * addqueue - function that add node to the tail the queue
 * @n: new value
 * @head: head of the queue
-*
 * Return: nothing
 */
 void addqueue(stack_t **head, int n)
