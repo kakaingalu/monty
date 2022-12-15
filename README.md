@@ -1,120 +1,61 @@
-# Monty Interpreter
+# 0x19. C - Stacks, Queues - LIFO, FIFO
 
-A language interpreter made in the C programming language to manage stacks and queues (LIFO and FIFO). The aim is to interpret Monty bytecodes files. [Monty](http://montyscoconut.github.io/) is a language that aims to close the gap between scripting and programming languages.
+# Usage
 
+- Clone the repository
 
-## Requirements
+`$ git clone https://github.com/mellab/monty.git`
 
-* Allowed editors: vi, vim, emacs
-* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=c90
-* All your files should end with a new line
-* A README.md file, at the root of the folder of the project is mandatory
-* Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
-* You allowed to use a maximum of one global variable
-* No more than 5 functions per file
-* You are allowed to use the C standard library
-* The prototypes of all your functions should be included in your header file called monty.h
-* Don’t forget to push your header file
-* All your header files should be include guarded
-* You are expected to do the tasks in the order shown in the project
+- The code will be compiled this way:
 
-## Compilation
+`$ gcc -Wall -Werror -Wextra -pedantic *.c -o monty`
 
-To compile this project, you can use the following command:
+- The monty program
 
-```
-$ make
-```
+`$ ./monty <file.m>`
 
-## Allowable opcodes and what they do
+# Tests
 
+## The Monty language
 
-|opcode  |  functionality|
-| --- | --- |
-| push | add element to the 'top' of stack and 'end' of queue  |
-| pop  | remove element from 'top' of stack and 'end' of queue |
-|pall  |print every member of the structure|
-| pint | prints the member value at the top of stack |
-| swap | swaps the order  of the 1st and 2nd elements in stack |
-| add | add top two member values |
-| sub | subtract the top element from the 2nd top element |
-| div | divide the 2nd element by the top element |
-| mul | multiply the top two elements of the stack |
-| mod | the remainder when the 2nd element is divided by the top element |
-| comment | there is the ability to parse comments found in bytecode ->'#'|
-| pchar | print character at the top of the stack |
-| pstr | print the character at the top of the stack|
-| rotl | moves element at the top to the bottom of the stack |
-| rotr | the bottom of the stack becomes the top |
-| queue, stack | toggles the doubly link list implementation style |
-| nop | opcode should do nothing |
+Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
 
+### Monty byte code files
 
+Files containing Monty byte codes usually have the `.m` extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
 
+`push 0$
+push 1$
+push 2$
+  push 3$
+                   pall    $
+push 4$
+    push 5    $
+      push    6        $
+pall$`
 
-Examples:
-`$ cat opcodetestfile.m`
+Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
 
-`push 1`
+`push 0 Push 0 onto the stack$
+push 1 Push 1 onto the stack$
+$
+push 2$
+  push 3$
+                   pall    $
+$
+$
+                           $
+push 4$
+$
+    push 5    $
+      push    6        $
+$
+pall` 
 
-`push 2`
+`This is the end of our program. Monty is awesome!$`
 
-`push 3`
+Authors:
 
-`pall`
+Joseph Kakai
 
-`$ ./montyfile opcodetestfile.m`
-
-`3`
-
-`2`
-
-`1`
-
-`$`
-
----
-
-`$ cat opcodetestfile.m`
-
-`push 1`
-
-`push 2`
-
-`push 3`
-
-`pall`
-
-`rotl`
-
-`pall`
-
-`$ ./montyfile opcodetestfile.m`
-
-`3`
-
-`2`
-
-`1`
-
-`2`
-
-`1`
-
-`3`
-
-## Exit Status
-Exits with status `EXIT_FAILURE`
-
-
-## Compilation
-All files were compiled on Ubuntu 14.04 LTS.
-
-All programs and functions were compiled with `gcc 4.8.4` using flags `-Wall -Werror -Wextra and -pedantic`.
-
-## Styling
-All files have been written in the Betty Style.
-
-## Authors
-**Obed Ehoneah** - [Github](https://github.com/ehoneahobed) [ehoneahobed@hotmail.com](mailto:ehoneahobed@hotmail.com)
-**Topman Paul-Dike** - [Github](https://github.com/tpauldike) [topman4loveworld@yahoo.com](mailto:topman4loveworld@yahoo.com)
+Purity Chege
