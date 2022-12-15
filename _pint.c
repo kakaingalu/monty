@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * _pint - prints top value of stack
+ * pint - prints top value of stack
  * @stack: pointer to stack
  * @num: line number
  *
  * Return: void
  */
-void _pint(stack_t **stack, unsigned int num)
+void pint(stack_t **stack, unsigned int num)
 {
 	if (stack == NULL || (*stack) == NULL)
 	{

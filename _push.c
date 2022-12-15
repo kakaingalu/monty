@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * _push - pushes element to stack
+ * push - pushes element to stack
  * @stack: pointer of stack
  * @num: line number
  *
  * Return: void
  */
-void _push(stack_t **stack, unsigned int num)
+void push(stack_t **stack, unsigned int num)
 {
 	stack_t *newNode = malloc(sizeof(stack_t));
 	char *token = strtok(NULL, "\t\n");

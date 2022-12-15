@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * _pall - prints all element in stack
+ * pall - prints all element in stack
  * @stack: pointer to stack
  * @num: line number of operation
  *
  * Return: void
  */
-void _pall(stack_t **stack, unsigned int num)
+void pall(stack_t **stack, unsigned int num)
 {
 	stack_t *temp;
 	(void)num;

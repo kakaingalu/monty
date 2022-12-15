@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * _freestack - frees stack
+ * freestack - frees stack
  * @stack: pointer to stack
  *
  * Return: void
  */
-void _freestack(stack_t *stack)
+void freestack(stack_t *stack)
 {
 	stack_t *tmp;
 

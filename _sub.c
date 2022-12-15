@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _sub - subtracts the top element of the stack
+ * sub - subtracts the top element of the stack
  * from the second top element of stack
  *
  * @stack: pointer to stack
@@ -9,7 +9,7 @@
  *
  * Return: void
  */
-void _sub(stack_t **stack, unsigned int num)
+void sub(stack_t **stack, unsigned int num)
 {
 	int value;
 
@@ -20,6 +20,6 @@ void _sub(stack_t **stack, unsigned int num)
 	}
 	value = 0;
 	value += (*stack)->n;
-	_pop(stack, num);
+	pop(stack, num);
 	(*stack)->n -= value;
 }

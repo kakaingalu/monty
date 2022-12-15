@@ -38,13 +38,13 @@ typedef struct instruction_s
 } instruction_t;
 
 void get_n_exe(char *command, stack_t **stack, unsigned int linenum);
-void _push(stack_t **stack, unsigned int linenum);
-void _pall(stack_t **stack, unsigned int linenum);
-void _freestack(stack_t *stack);
-void _pint(stack_t **stack, unsigned int linenum);
-void _pop(stack_t **stack, unsigned int linenum);
-void _swap(stack_t **stack, unsigned int linenum);
-void _add(stack_t **stack, unsigned int linenum);
-void _nop(stack_t **stack, unsigned int linenum);
-void _sub(stack_t **stack, unsigned int linenum);
+void push(stack_t **stack, unsigned int linenum);
+void pall(stack_t **stack, unsigned int linenum);
+void freestack(stack_t *stack);
+void pint(stack_t **stack, unsigned int linenum);
+void pop(stack_t **stack, unsigned int linenum);
+void swap(stack_t **stack, unsigned int linenum);
+void add(stack_t **stack, unsigned int linenum);
+void nop(stack_t **stack, unsigned int linenum);
+void sub(stack_t **stack, unsigned int linenum);
 #endif

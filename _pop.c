@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
- * _pop - pops an element from top of stack
+ * pop - pops an element from top of stack
  * @stack: pointer to stack
  * @num: line number
  *
  * Return: void
  */
-void _pop(stack_t **stack, unsigned int num)
+void pop(stack_t **stack, unsigned int num)
 {
 		stack_t *temp;
 
