@@ -8,23 +8,23 @@
  *
  * Return: void
  */
-void get_n_exe(char *com, stack_t **head, unsigned int num)
+void get_n_exe(char *com, stack_t **stack, unsigned int num)
 {
 	unsigned int counter = 0;
-	instruction_t com[] = {
+	instruction_t com_s[] = {
 		{"push", push}, {"pall", pall},
 		{NULL, NULL}
 	};
-	while (com[counter].opcode != NULL)
+	while (com_s[counter].opcode != NULL)
 	{
-		if (strcmp(com[counter].opcode, com) == 0)
+		if (strcmp(com_s[counter].opcode, com) == 0)
 		{
-			com[counter].f(head, num);
+			com_s[counter].f(stack, num);
 			return;
 		}
 		counter++;
 	}
-	if (com[counter].opcode == NULL)
+	if (com_s[counter].opcode == NULL)
 	{
 		fprintf(stderr, "L%d: unknwon instruction %s\n", num, com);
 		exit(EXIT_FAILURE);

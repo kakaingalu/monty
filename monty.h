@@ -34,7 +34,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void get_func(char *command, stack_t **stack, unsigned int linenum);
+void get_n_exe(char *command, stack_t **stack, unsigned int linenum);
 void push(stack_t **stack, unsigned int linenum);
 void pall(stack_t **stack, unsigned int linenum);
 void freestack(stack_t *stack);

@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-void push(stack_t **head, unsigned int num)
+void push(stack_t **stack, unsigned int num)
 {
 	stack_t *newNode = malloc(sizeof(stack_t));
 	char *token = strtok(NULL, "\t\n");
@@ -41,10 +41,10 @@ void push(stack_t **head, unsigned int num)
 	}
 	newNode->n = atoi(token);
 	newNode->prev = NULL;
-	newNode->next = *head;
-	if ((*head) != NULL)
+	newNode->next = *stack;
+	if ((*stack) != NULL)
 	{
-		(*head)->prev = newNode;
+		(*stack)->prev = newNode;
 	}
-	*head = newNode;
+	*stack = newNode;
 }
