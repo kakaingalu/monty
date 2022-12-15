@@ -22,7 +22,7 @@ void free_stack(stack_t *head)
 /**
  *f_stack - function that prints the top
  *@head: head of stack
- *@counter: line count
+ *@counter: line counter
  *
  *Return: nothing
  */
