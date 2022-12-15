@@ -2,7 +2,7 @@
 
 /**
  * _push - pushes element to stack
- * @head: head pointer of stack
+ * @stack: pointer of stack
  * @num: line number
  *
  * Return: void

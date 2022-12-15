@@ -2,7 +2,7 @@
 
 /**
  * _pall - prints all element in stack
- * @head: head pointer to stack
+ * @stack: pointer to stack
  * @num: line number of operation
  *
  * Return: void
