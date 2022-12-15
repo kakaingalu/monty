@@ -3,7 +3,7 @@
 /**
 * f_queue - function that prints the top of the queue
 * @head: head of queue
-* @counter: line count
+* @counter: line counter
 *
 * Return: nothing
 */
