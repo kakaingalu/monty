@@ -3,7 +3,7 @@
 /**
 * execute - function that executes the opcode
 * @stack: head stack linked list
-* @counter: line count
+* @counter: line counter
 * @file: pointer to monty file stream
 * @content: line content
 *
